@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+<nav class="navbar p-4   navbar-expand-lg ">
+  <div class="container    ">
+  <div class=" logo d-flex ">
+    <a class="navbar-brand" href="#"><img src="./img/logo@2x.png" alt="logo" class="w-100 "></a>
+   <div> <h1 class="">Weather</h1>
+    <span><a class=" text-white-50 " href="#home">Tagline goes here</a></span></div>
+  </div>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+   <ul class="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-between w-50">
+        <li class="nav-item">
+          <a class="nav-link my-nav-style active" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link my-nav-style" href="#News">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link my-nav-style" href="#livecam">Live Cameras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link my-nav-style" href="#photos">Photos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link my-nav-style" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+<main>
+<section class="p-4 my-2">
+  <div class="container-fluid hero"></div>  
+  
+  <div class="container my-w-75 ">
+    <div class=" search w-100 position-relative my-5 d-flex"> 
+      
+      <input class="w-100 rounded-5 position-relative" type="text" placeholder="Find your location..." id="searchInp"> 
+      <button id="searchBtn" class="position-absolute rounded-5">Find</button>
+</div>
+
+  <div class="row g-0 ">
+    <div class="col-sm-12 col-md-4">
+
+<div class="card main-card ">
+
+  <div class="card-header text-start d-flex justify-content-between"> <h2 id="mainDay"  >day</h2> 
+    <span id="currentDate" > current Date</span>
+  </div>
+      <div class="card-body ">
+        <span id="mainCity">city</span>
+       <div class="d-flex">
+         <h4 class="card-title p-md-2  " id="mainDeg">Deg</h4>
+         <p class="card-text "  ><img  id="mainIcon" width="80" src="" alt=""></p>
+        </div>
+        <p class="" id="mainCon"  ></p>
+        <p class="my-2" style="color: white;" >FeelsLike <span id="FeelLike" style="color: gold;"></span> <img src="./img/temperature-quarter-solid.svg" class="w-1 m-" alt=""></p>
+          <ul class="d-flex   w-100 my-md-5 list-unstyled ">
+        
+            <li class="me-2" ><img src="./img/icon-umberella.png" alt=""> <span id="humidity"></span></li>
+            <li class="ms-2" ><img src="./img/icon-wind.png"  alt="" > <span id="windKph"></span></li>
+            <li class="ms-3"><img src="./img/icon-compass.png"  alt=""  > <span  id="windDir"></span> </li>
+          </ul>
+             
+      </div>
+    </div>
+      <div>
+      
+    </div>
+
+    </div>
+    <div class=" col-sm-12 col-md-4">
+
+<div class="card sub-card  mid">
+     <div class="card-header text-center"> <h2  class="days">day</h2></div>
+
+      <div class="card-body text-center">
+ <p class="card-text  "  ><img id="mainIcone" class="icon" src="" alt=""></p>
+         <h4 class="card-title p-2 maxtemp" >maxDeg</h4>
+         <h6 class="card-title p-2 mintemp" >mindeg</h6>
+        <p class="card-text condition" id="status">status</p>
+      </div>
+   
+      
+    </div>
+
+    </div>
+    <div class=" col-sm-12 col-md-4">
+
+<div class="card sub-card ">
+       <div class="card-header text-center "> <h2  class="days">Day</h2></div>
+
+      <div class="card-body text-center">
+
+ <p class="card-text Icon "  ><img  class="icon" src="" alt=""></p>
+         <h4 class="card-title p-2  maxtemp ">maxtemp</h4>
+         <h6 class="card-title p-2  mintemp ">mintemp</h6>
+        <p class="card-text condition" id="statu" >status</p>
+      </div>
+
+      
+    </div>
+
+    </div>
+    
+  </div>
+</div>
+
+</section>
+</main>
+
+    
+  
+
+
+
+<footer >
+  
+  <div class="container my-4">
+
+
+<div class="row">
+  <div class="col-md-7">
+    <div class=" search w-100 position-relative my-5 d-flex"> 
+      
+      <input class="w-100 rounded-5 position-relative " type="text"  placeholder="Enter your email to subscribe..." > 
+      <button  class="position-absolute rounded-5">Find</button>
+</div>
+
+  </div>
+  <div class="col-md-5">
+
+<ul class="list-unstyled d-flex mx-auto justify-content-between w-25 m-0 ">
+  <li><a href="https://www.facebook.com/"  ><i class="fa-brands fa-facebook-f "></i></a></li>
+  <li><a href="https://x.com/?lang=en"><i class="fa-brands fa-twitter"></i></a></li>
+  <li><a href="https://www.google.com/"><i class="fa-brands fa-google"></i></a></li>
+  <li><a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+</ul>
+
+  </div>
+  <span style="color: white;" class="my-3 ">Copyright 2014 Company name. Designed by Themezy. All rights reserved</span>
+</div>
+
+
+</div>
+
+
+
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

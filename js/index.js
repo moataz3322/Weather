@@ -1,6 +1,7 @@
-let dataList;
+let dataList=[];
 let searchBtn = document.getElementById("searchBtn");
 let searchInp = document.getElementById("searchInp");
+
 let search = searchInp.addEventListener("input", function () {
   displayData(searchInp.value);
 });
@@ -28,14 +29,14 @@ navigator.geolocation.getCurrentPosition(
   }
 );
 
-//todo =========Main Function
+//todo =========Main Function===================
 async function displayData(cityName) {
   try {
     let response = await fetch(
       `https://api.weatherapi.com/v1/forecast.json?key=21c29368f0c94213aca203645252706&q=${cityName}&days=3`
     );
     if (response.ok) {
-      let dataList = await response.json();
+       dataList = await response.json();
 
       console.log(dataList);
 
@@ -112,12 +113,9 @@ async function displayData(cityName) {
 }
 
 // Todo for the Next 2 Days Data
-async function data(cityName) {
+ function data(cityName) {
   try {
-    let response = await fetch(
-      `https://api.weatherapi.com/v1/forecast.json?key=21c29368f0c94213aca203645252706&q=${cityName}&days=3`
-    );
-    let dataList = await response.json();
+    
 
     // todo ===== deleted the currentDay
     let forecastObj = dataList.forecast.forecastday.slice(1);

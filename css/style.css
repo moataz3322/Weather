@@ -10,7 +10,7 @@ a {
 }
 html,
 body {
-
+height: 100%;
   margin: 0;
   padding: 0;
 /* ! what i add */
@@ -47,6 +47,7 @@ body {
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 25px;
   padding-left: 25px;
+  
 }
 
 .nav-link {

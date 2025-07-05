@@ -10,7 +10,7 @@ a {
 }
 html,
 body {
-  height: 100%;
+
   margin: 0;
   padding: 0;
 /* ! what i add */
@@ -167,6 +167,7 @@ body {
 /* todo Footer Start */
 footer {
   background-color: #262936;
+
 }
 footer ul {
   position: relative;
